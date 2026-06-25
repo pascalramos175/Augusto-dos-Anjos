@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Augusto dos Anjos – Apresentação</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ CANVAS DE PARTÍCULAS ░░ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ░░ WRAPPER PRINCIPAL ░░ -->
+  <div class="presentation-wrapper">
+
+    <!-- ════════════════════════════════════
+         BARRA LATERAL DE PROGRESSO
+    ════════════════════════════════════ -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="sidebar-initials">AA</span>
+      </div>
+      <nav class="slide-nav" id="slide-nav" role="navigation" aria-label="Navegação de slides">
+        <!-- Gerado via JS -->
+      </nav>
+      <div class="sidebar-footer">
+        <button id="btn-fullscreen" class="icon-btn" title="Tela cheia" aria-label="Tela cheia">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ════════════════════════════════════
+         ÁREA DE SLIDES
+    ════════════════════════════════════ -->
+    <main class="slides-area" id="slides-area">
+
+      <!-- ══ SLIDE 1 – CAPA ══ -->
+      <section class="slide" id="slide-1" data-slide="1">
+        <div class="slide-inner cover-slide">
+          <div class="cover-overlay"></div>
+          <div class="cover-content">
+            <p class="eyebrow"><i class="fa-solid fa-feather-pointed"></i> Língua Portuguesa · Pré-Modernismo</p>
+            <h1 class="cover-title">Augusto<br>dos Anjos</h1>
+            <p class="cover-subtitle">O poeta da ciência, da morte e da existência humana</p>
+            <div class="cover-divider"></div>
+            <div class="cover-meta">
+              <div class="meta-item"><i class="fa-solid fa-users"></i> <span>[NOME DOS INTEGRANTES]</span></div>
+              <div class="meta-item"><i class="fa-solid fa-graduation-cap"></i> <span>[TURMA]</span></div>
+              <div class="meta-item"><i class="fa-solid fa-school"></i> <span>[ESCOLA]</span></div>
+              <div class="meta-item"><i class="fa-solid fa-calendar-days"></i> <span>[DATA]</span></div>
+            </div>
+          </div>
+          <div class="cover-verse">
+            <em>"Eu, filho do carbono e do amoníaco,<br>Monstro de escuridão e rutilância…"</em>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 2 – CONTEXTO HISTÓRICO ══ -->
+      <section class="slide hidden" id="slide-2" data-slide="2">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">02</span>
+            <h2 class="slide-title">Contexto Histórico</h2>
+            <p class="slide-subtitle">O Pré-Modernismo brasileiro</p>
+          </header>
+          <div class="content-grid two-col">
+            <div class="text-block">
+              <div class="info-card">
+                <div class="card-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <h3>O que foi o Pré-Modernismo?</h3>
+                <p>Movimento de transição literária ocorrido entre <strong>1902 e 1922</strong>, período entre o fim do Simbolismo e o início do Modernismo com a Semana de Arte Moderna.</p>
+              </div>
+              <div class="info-card">
+                <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h3>Período Histórico</h3>
+                <p>Brasil da Primeira República: urbanização acelerada, abolição recente da escravidão, tensões sociais, crise do café e grandes desigualdades regionais.</p>
+              </div>
+            </div>
+            <div class="text-block">
+              <div class="info-card accent">
+                <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
+                <h3>Principais Características</h3>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-dot"></i> Crítica social e regionalismo</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> Linguagem mais direta e realista</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> Ruptura com o Parnasianismo</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> Temas do cotidiano e do povo</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> Mistura de estilos e correntes</li>
+                </ul>
+              </div>
+              <div class="info-card">
+                <div class="card-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
+                <h3>Relação entre Estilos</h3>
+                <p>O Pré-Modernismo absorveu a <em>musicalidade simbolista</em>, o <em>rigor formal parnasiano</em> e antecipou a crítica social do <em>Modernismo</em>, formando uma ponte única na literatura brasileira.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 3 – BIOGRAFIA ══ -->
+      <section class="slide hidden" id="slide-3" data-slide="3">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">03</span>
+            <h2 class="slide-title">Biografia</h2>
+            <p class="slide-subtitle">A vida marcada pela dor e pelo gênio</p>
+          </header>
+          <div class="bio-layout">
+            <div class="bio-portrait">
+              <div class="portrait-frame">
+                <div class="portrait-placeholder">
+                  <i class="fa-solid fa-user-large"></i>
+                  <span>Augusto dos Anjos</span>
+                  <small>1884 – 1914</small>
+                </div>
+              </div>
+              <div class="bio-quick">
+                <div class="quick-item"><i class="fa-solid fa-cake-candles"></i><span>20 abr. 1884 – Sapé, PB</span></div>
+                <div class="quick-item"><i class="fa-solid fa-cross"></i><span>12 nov. 1914 – Leopoldina, MG</span></div>
+                <div class="quick-item"><i class="fa-solid fa-book-open-reader"></i><span>Bacharel em Direito – UFPE</span></div>
+                <div class="quick-item"><i class="fa-solid fa-ring"></i><span>Casado com Ester Fialho</span></div>
+              </div>
+            </div>
+            <div class="timeline-container">
+              <h3 class="timeline-label">Linha do Tempo</h3>
+              <div class="timeline">
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-year">1884</div>
+                  <div class="tl-desc">Nasce em Sapé, Paraíba, no Engenho Pau d'Arco, filho do Dr. Alexandre Rodrigues dos Anjos.</div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-year">1900</div>
+                  <div class="tl-desc">Ingressa na Faculdade de Direito do Recife, centro do pensamento científico e positivista da época.</div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-year">1904</div>
+                  <div class="tl-desc">Forma-se em Direito. Retorna à Paraíba e começa a lecionar, enfrentando dificuldades financeiras.</div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-year">1910</div>
+                  <div class="tl-desc">Casa-se com Ester Fialho. Muda-se para o Rio de Janeiro em busca de melhores condições de vida.</div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div class="tl-year">1912</div>
+                  <div class="tl-desc">Publica <strong>"Eu"</strong>, sua única e revolucionária obra em vida, com recursos próprios.</div>
+                </div>
+                <div class="tl-item tl-last">
+                  <div class="tl-dot tl-dot-end"></div>
+                  <div class="tl-year">1914</div>
+                  <div class="tl-desc">Falece de pneumonia em Leopoldina (MG), aos 30 anos, sem ter visto o sucesso de sua obra.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 4 – PERSONALIDADE E INFLUÊNCIAS ══ -->
+      <section class="slide hidden" id="slide-4" data-slide="4">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">04</span>
+            <h2 class="slide-title">Personalidade e Influências</h2>
+            <p class="slide-subtitle">O pensamento que moldou sua poesia única</p>
+          </header>
+          <div class="influences-grid">
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#1B4965,#0D1B2A)">
+                <i class="fa-solid fa-dna"></i>
+              </div>
+              <h3>Darwinismo</h3>
+              <p>A teoria da evolução de Darwin impactou profundamente Augusto, que via o ser humano como produto de processos naturais e biológicos, sem transcendência divina.</p>
+            </div>
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#8B1A1A,#3D0C02)">
+                <i class="fa-solid fa-flask"></i>
+              </div>
+              <h3>Cientificismo</h3>
+              <p>Formado no ambiente positivista da Faculdade de Direito do Recife, utilizava vocabulário científico (química, biologia, física) como linguagem poética.</p>
+            </div>
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#2C5F2E,#0A1F0B)">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h3>Positivismo</h3>
+              <p>A filosofia de Comte, que busca explicar o mundo pela razão e pela ciência, influenciou sua visão materialista da existência humana e da morte.</p>
+            </div>
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#4A3728,#1A1009)">
+                <i class="fa-solid fa-cloud-rain"></i>
+              </div>
+              <h3>Pessimismo Filosófico</h3>
+              <p>Schopenhauer e o pensamento niilista europeu alimentaram seu olhar pessimista sobre a vida, o sofrimento e a inutilidade da existência humana.</p>
+            </div>
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#1B3A4B,#060F14)">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h3>Existencialismo</h3>
+              <p>Antes mesmo do movimento formal, Augusto questionava o sentido da existência, confrontando o homem com sua própria finitude e insignificância cósmica.</p>
+            </div>
+            <div class="influence-card">
+              <div class="inf-icon" style="background:linear-gradient(135deg,#5C3317,#1C0F06)">
+                <i class="fa-solid fa-ghost"></i>
+              </div>
+              <h3>Simbolismo</h3>
+              <p>A atmosfera sombria, os símbolos da morte e a musicalidade dos versos revelam a herança simbolista que ele reelaborou com sua visão científica e pessimista.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 5 – PRINCIPAIS OBRAS ══ -->
+      <section class="slide hidden" id="slide-5" data-slide="5">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">05</span>
+            <h2 class="slide-title">Principais Obras</h2>
+            <p class="slide-subtitle">Uma voz que o tempo silenciou — e depois amplificou</p>
+          </header>
+          <div class="obras-layout">
+            <div class="obra-destaque">
+              <div class="livro-cover">
+                <div class="livro-spine"></div>
+                <div class="livro-front">
+                  <span class="livro-titulo-visual">EU</span>
+                  <span class="livro-autor-visual">Augusto dos Anjos</span>
+                  <span class="livro-ano-visual">1912</span>
+                </div>
+              </div>
+              <div class="obra-desc">
+                <h3>"Eu" <span class="badge">Obra Principal</span></h3>
+                <p>Única obra publicada em vida (1912), com recursos próprios, em edição de apenas <strong>100 exemplares</strong>. Reúne sonetos e poemas de temática filosófico-científica, marcados pela originalidade absoluta. Após a morte do poeta, o livro tornou-se um dos mais vendidos da literatura brasileira.</p>
+                <div class="obra-tags">
+                  <span class="tag">Sonetos</span>
+                  <span class="tag">1912</span>
+                  <span class="tag">100 exemplares</span>
+                  <span class="tag">Único em vida</span>
+                </div>
+              </div>
+            </div>
+            <div class="obras-table-wrap">
+              <table class="obras-table">
+                <thead>
+                  <tr>
+                    <th>Obra</th>
+                    <th>Ano</th>
+                    <th>Tipo</th>
+                    <th>Observação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Eu</strong></td>
+                    <td>1912</td>
+                    <td>Poesia</td>
+                    <td>Publicada em vida pelo próprio autor</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Eu e Outras Poesias</strong></td>
+                    <td>1919</td>
+                    <td>Poesia</td>
+                    <td>Edição ampliada póstuma, organizada por Órris Soares</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Poemas Esquecidos</strong></td>
+                    <td>1920</td>
+                    <td>Poesia</td>
+                    <td>Textos inéditos encontrados após a morte</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Obra Completa</strong></td>
+                    <td>1994</td>
+                    <td>Coletânea</td>
+                    <td>Edição crítica completa, organizada pela editora Nova Aguilar</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 6 – CARACTERÍSTICAS DA OBRA ══ -->
+      <section class="slide hidden" id="slide-6" data-slide="6">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">06</span>
+            <h2 class="slide-title">Características da Obra</h2>
+            <p class="slide-subtitle">O que torna Augusto dos Anjos inconfundível</p>
+          </header>
+          <div class="char-grid">
+            <div class="char-card animate-card">
+              <div class="char-num">01</div>
+              <i class="fa-solid fa-microscope char-ico"></i>
+              <h3>Linguagem Científica</h3>
+              <p>Termos da biologia, química e física integram os versos de forma inédita na literatura brasileira.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">02</div>
+              <i class="fa-solid fa-book-skull char-ico"></i>
+              <h3>Vocabulário Incomum</h3>
+              <p>Palavras como "protoplasma", "micróbio" e "carbono" convivem com imagens poéticas intensas.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">03</div>
+              <i class="fa-solid fa-skull char-ico"></i>
+              <h3>Tema da Morte</h3>
+              <p>A morte não é tratada como fim, mas como processo biológico e filosófico inevitável.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">04</div>
+              <i class="fa-solid fa-worm char-ico"></i>
+              <h3>Decomposição Humana</h3>
+              <p>Descreve o corpo em decomposição com precisão científica, explorando a transição entre vida e matéria.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">05</div>
+              <i class="fa-solid fa-heart-crack char-ico"></i>
+              <h3>Sofrimento Existencial</h3>
+              <p>Dor, angústia e pessimismo percorrem cada verso, reflexo de uma vida marcada por perdas e pobreza.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">06</div>
+              <i class="fa-solid fa-atom char-ico"></i>
+              <h3>Materialismo</h3>
+              <p>Visão de que o homem é apenas matéria, sem alma imortal — o corpo retorna ao pó e à natureza.</p>
+            </div>
+            <div class="char-card animate-card">
+              <div class="char-num">07</div>
+              <i class="fa-solid fa-star char-ico"></i>
+              <h3>Originalidade Absoluta</h3>
+              <p>Nenhum outro poeta brasileiro misturou ciência, filosofia e lirismo da mesma forma — Augusto é único.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 7 – APROFUNDAMENTO EM "EU" ══ -->
+      <section class="slide hidden" id="slide-7" data-slide="7">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">07</span>
+            <h2 class="slide-title">A Obra "Eu"</h2>
+            <p class="slide-subtitle">Aprofundamento no livro mais original do Pré-Modernismo</p>
+          </header>
+          <div class="content-grid two-col">
+            <div class="text-block">
+              <div class="info-card">
+                <div class="card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3>Contexto da Publicação</h3>
+                <p>Publicado em 1912 com recursos do próprio Augusto, em tiragem modesta de 100 exemplares. O poeta não obteve reconhecimento em vida — o livro só ganhou fama após sua morte em 1914.</p>
+              </div>
+              <div class="info-card accent">
+                <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3>Importância Literária</h3>
+                <p>Considerado uma das obras mais originais da literatura brasileira. Rompeu com todos os padrões estéticos da época ao unir ciência e poesia de forma radical e sem precedentes.</p>
+              </div>
+            </div>
+            <div class="text-block">
+              <div class="eu-stats">
+                <div class="stat-block">
+                  <span class="stat-num">58</span>
+                  <span class="stat-label">Poemas na edição original</span>
+                </div>
+                <div class="stat-block">
+                  <span class="stat-num">100</span>
+                  <span class="stat-label">Exemplares da 1ª edição</span>
+                </div>
+                <div class="stat-block">
+                  <span class="stat-num">1912</span>
+                  <span class="stat-label">Ano de publicação</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="card-icon"><i class="fa-solid fa-sitemap"></i></div>
+                <h3>Temas Recorrentes</h3>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-dot"></i> A morte e a decomposição do corpo</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> O sofrimento como condição humana</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> A ciência como linguagem poética</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> O pessimismo filosófico radical</li>
+                  <li><i class="fa-solid fa-circle-dot"></i> A solidão e o fracasso existencial</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 8 – POEMA 1 ══ -->
+      <section class="slide hidden" id="slide-8" data-slide="8">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">08</span>
+            <h2 class="slide-title">Poema I</h2>
+            <p class="slide-subtitle">"Psicologia de um Vencido"</p>
+          </header>
+          <div class="poem-layout">
+            <div class="poem-text-block">
+              <div class="poem-frame">
+                <h3 class="poem-title-display">Psicologia de um Vencido</h3>
+                <div class="poem-verses">
+                  <p>Eu, filho do carbono e do amoníaco,<br>
+                  Monstro de escuridão e rutilância,<br>
+                  Sofro, desde a origem da existência,<br>
+                  A influência má dos signos do zodíaco.</p>
+
+                  <p>Profundissimamente hipocondríaco,<br>
+                  Este ambiente me causa repugnância…<br>
+                  Sobe-me à boca uma ânsia,<br>
+                  Que é uma ânsia de vomitar o éter ótico.</p>
+
+                  <p>Se a Ciência é ilusão e o mundo mente,<br>
+                  Por que é que o bruto, hipnoticamente,<br>
+                  Tece a estúpida teia cotidiana?</p>
+
+                  <p>Que importa a mim que o inverno passe ou fique?<br>
+                  Nenhuma tônica me tonifica,<br>
+                  No sombrio hospital da alma humana.</p>
+                </div>
+                <div class="poem-source">Augusto dos Anjos, "Eu" (1912)</div>
+              </div>
+            </div>
+            <div class="poem-analysis-quick">
+              <div class="analysis-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div>
+                  <h4>Forma</h4>
+                  <p>Soneto clássico: 2 quartetos + 2 tercetos, versos decassílabos.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-tags"></i>
+                <div>
+                  <h4>Temas Principais</h4>
+                  <p>Pessimismo, sofrimento existencial, crítica à rotina humana, materialismo científico.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-flask-vial"></i>
+                <div>
+                  <h4>Linguagem Científica</h4>
+                  <p>"Carbono", "amoníaco", "éter ótico" — química integrada à poesia existencial.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-face-sad-tear"></i>
+                <div>
+                  <h4>Tom</h4>
+                  <p>Profundamente pessimista, desiludido e revoltado com a condição humana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 9 – ANÁLISE DO POEMA 1 ══ -->
+      <section class="slide hidden" id="slide-9" data-slide="9">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">09</span>
+            <h2 class="slide-title">Análise – Poema I</h2>
+            <p class="slide-subtitle">"Psicologia de um Vencido" — leitura aprofundada</p>
+          </header>
+          <div class="infographic-grid">
+            <div class="infog-card red">
+              <div class="infog-header"><i class="fa-solid fa-quote-left"></i> Verso Inicial</div>
+              <p class="infog-quote">"Eu, filho do carbono e do amoníaco"</p>
+              <p class="infog-explain">O poeta se apresenta como produto químico — nega qualquer origem divina. O "eu" é matéria, não espírito.</p>
+            </div>
+            <div class="infog-card blue">
+              <div class="infog-header"><i class="fa-solid fa-brain"></i> Crítica Existencial</div>
+              <p class="infog-explain">O título "Vencido" revela um sujeito que se reconhece derrotado pela vida antes mesmo de lutar — a derrota é ontológica, pertence à sua natureza.</p>
+            </div>
+            <div class="infog-card teal">
+              <div class="infog-header"><i class="fa-solid fa-microscope"></i> Elementos Científicos</div>
+              <ul class="infog-list">
+                <li><strong>Carbono e amoníaco</strong> → composição química do corpo</li>
+                <li><strong>Hipocondríaco</strong> → obsessão com a doença e a morte</li>
+                <li><strong>Éter ótico</strong> → teoria física obsoleta, ironia com a ciência</li>
+              </ul>
+            </div>
+            <div class="infog-card dark">
+              <div class="infog-header"><i class="fa-solid fa-cloud-bolt"></i> Visão Pessimista</div>
+              <p class="infog-explain">O verso final — "No sombrio hospital da alma humana" — sintetiza sua visão: a vida humana é uma doença, a existência é um sofrimento sem cura ou sentido.</p>
+              <p class="infog-quote">"Nenhuma tônica me tonifica"</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 10 – POEMA 2 ══ -->
+      <section class="slide hidden" id="slide-10" data-slide="10">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">10</span>
+            <h2 class="slide-title">Poema II</h2>
+            <p class="slide-subtitle">"Versos Íntimos"</p>
+          </header>
+          <div class="poem-layout">
+            <div class="poem-text-block">
+              <div class="poem-frame poem-frame-alt">
+                <h3 class="poem-title-display">Versos Íntimos</h3>
+                <div class="poem-verses">
+                  <p>Vês! Ninguém assistiu ao formidável<br>
+                  Enterro de tua última quimera.<br>
+                  Somente a Ingratidão — esta pantera —<br>
+                  Foi tua companheira inseparável!</p>
+
+                  <p>Acostuma-te à lama que te espera!<br>
+                  O Homem, que, nesta terra miserável,<br>
+                  Mora, entre feras, sente inevitável<br>
+                  Necessidade de também ser fera.</p>
+
+                  <p>Toma um fósforo. Acende teu cigarro!<br>
+                  O beijo, amigo, é a véspera do escarro,<br>
+                  A mão que afaga é a mesma que apedreja.</p>
+
+                  <p>Se a alguém causa inda pena a tua chaga,<br>
+                  Apedreja essa mão vil que te afaga,<br>
+                  Escarra nessa boca que te beija!</p>
+                </div>
+                <div class="poem-source">Augusto dos Anjos, "Eu" (1912)</div>
+              </div>
+            </div>
+            <div class="poem-analysis-quick">
+              <div class="analysis-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div>
+                  <h4>Forma</h4>
+                  <p>Soneto: 2 quartetos + 2 tercetos, uso de antíteses e imagens contrastantes.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-tags"></i>
+                <div>
+                  <h4>Temas Principais</h4>
+                  <p>Traição, ingratidão, relações humanas corrompidas, violência social e desencanto.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-people-arrows"></i>
+                <div>
+                  <h4>Relações Humanas</h4>
+                  <p>O outro ser humano é apresentado como ameaça — a intimidade esconde traição e crueldade.</p>
+                </div>
+              </div>
+              <div class="analysis-item">
+                <i class="fa-solid fa-fire"></i>
+                <div>
+                  <h4>Tom</h4>
+                  <p>Raiva, cinismo e desencanto — o conselho dado é brutal: endurece-te ou serás destruído.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 11 – ANÁLISE DO POEMA 2 ══ -->
+      <section class="slide hidden" id="slide-11" data-slide="11">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">11</span>
+            <h2 class="slide-title">Análise – Poema II</h2>
+            <p class="slide-subtitle">"Versos Íntimos" — leitura aprofundada</p>
+          </header>
+          <div class="infographic-grid">
+            <div class="infog-card red">
+              <div class="infog-header"><i class="fa-solid fa-heart-crack"></i> Mensagem Central</div>
+              <p class="infog-explain">O poema é um "conselho amargo": diante de um mundo de ingratidão e violência, o ser humano deve se endurecer — ou será destruído pelas mesmas mãos que o acariciam.</p>
+            </div>
+            <div class="infog-card blue">
+              <div class="infog-header"><i class="fa-solid fa-handshake-slash"></i> Relações Humanas</div>
+              <p class="infog-quote">"O beijo, amigo, é a véspera do escarro,<br>A mão que afaga é a mesma que apedreja."</p>
+              <p class="infog-explain">A contradição é a essência das relações: afeto e violência habitam o mesmo gesto humano.</p>
+            </div>
+            <div class="infog-card teal">
+              <div class="infog-header"><i class="fa-solid fa-cloud-rain"></i> Tom Pessimista</div>
+              <p class="infog-explain">O poeta não oferece consolo — apenas confirma que o sofrimento é estrutural à existência humana. Não há esperança de redenção ou solidariedade genuína.</p>
+            </div>
+            <div class="infog-card dark">
+              <div class="infog-header"><i class="fa-solid fa-city"></i> Crítica Social</div>
+              <p class="infog-explain">Por trás do pessimismo individual há uma crítica à sociedade que deforma o ser humano: "entre feras, sente inevitável / necessidade de também ser fera." O ambiente social embrutece.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 12 – LEGADO ══ -->
+      <section class="slide hidden" id="slide-12" data-slide="12">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">12</span>
+            <h2 class="slide-title">Legado Literário</h2>
+            <p class="slide-subtitle">A permanência de uma voz radicalmente original</p>
+          </header>
+          <div class="legado-layout">
+            <div class="legado-quote-block">
+              <blockquote class="big-quote">
+                "Augusto dos Anjos é o maior poeta maldito do Brasil — único, inimitável, inclassificável."
+              </blockquote>
+              <p class="big-quote-attr">— Crítica literária brasileira</p>
+            </div>
+            <div class="legado-cards">
+              <div class="legado-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Influência nas Gerações Futuras</h3>
+                <p>Poetas do Modernismo e do Concretismo reconheceram em Augusto um precursor da renovação da linguagem poética brasileira, admirando sua ousadia vocabular.</p>
+              </div>
+              <div class="legado-card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Importância Duradoura</h3>
+                <p>"Eu e Outras Poesias" tornou-se um dos livros de poesia mais reeditados do Brasil — um paradoxo: o poeta da morte criou uma obra imortal.</p>
+              </div>
+              <div class="legado-card">
+                <i class="fa-solid fa-not-equal"></i>
+                <h3>Diferença dos Demais Pré-Modernistas</h3>
+                <p>Enquanto Euclides da Cunha, Lima Barreto e Monteiro Lobato focavam no social e no regional, Augusto mergulhou no filosófico e no existencial com linguagem científica singular.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 13 – CURIOSIDADES ══ -->
+      <section class="slide hidden" id="slide-13" data-slide="13">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">13</span>
+            <h2 class="slide-title">Curiosidades</h2>
+            <p class="slide-subtitle">Fatos surpreendentes sobre o "Poeta da Morte"</p>
+          </header>
+          <div class="curiosities-grid">
+            <div class="curiosity-card">
+              <div class="cur-num">1</div>
+              <i class="fa-solid fa-book cur-ico"></i>
+              <h3>Um único livro em vida</h3>
+              <p>Publicou apenas <strong>"Eu"</strong> em vida, em 1912 — financiado com seu próprio dinheiro, em tiragem de 100 exemplares. Hoje é um dos livros de poesia mais reeditados do Brasil.</p>
+            </div>
+            <div class="curiosity-card">
+              <div class="cur-num">2</div>
+              <i class="fa-solid fa-hourglass-end cur-ico"></i>
+              <h3>Morte prematura</h3>
+              <p>Faleceu aos apenas <strong>30 anos</strong>, vítima de pneumonia. Nunca soube que se tornaria um dos maiores poetas brasileiros — seu reconhecimento veio inteiramente após a morte.</p>
+            </div>
+            <div class="curiosity-card">
+              <div class="cur-num">3</div>
+              <i class="fa-solid fa-face-meh cur-ico"></i>
+              <h3>Recepção crítica fria</h3>
+              <p>Em vida, sua obra foi recebida com indiferença e até deboche. A linguagem científica e os temas sombrios desconcertavam os críticos acostumados ao Parnasianismo.</p>
+            </div>
+            <div class="curiosity-card">
+              <div class="cur-num">4</div>
+              <i class="fa-solid fa-star cur-ico"></i>
+              <h3>Reconhecimento póstumo</h3>
+              <p>Após 1919, com a reedição ampliada, o livro explodiu em popularidade. Gerações de leitores se identificaram com seu pessimismo e originalidade radical.</p>
+            </div>
+            <div class="curiosity-card">
+              <div class="cur-num">5</div>
+              <i class="fa-solid fa-landmark cur-ico"></i>
+              <h3>Professor e advogado</h3>
+              <p>Para sobreviver, Augusto lecionou português e direito, além de exercer a advocacia — profissões que nunca trouxeram a estabilidade que tanto buscou.</p>
+            </div>
+            <div class="curiosity-card">
+              <div class="cur-num">6</div>
+              <i class="fa-solid fa-dna cur-ico"></i>
+              <h3>Poesia científica única</h3>
+              <p>Nenhum poeta brasileiro antes ou depois usou vocabulário científico com tamanha naturalidade poética — uma fusão radical entre razão e emoção que ainda surpreende leitores.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 14 – RESUMO / APOSTILA ══ -->
+      <section class="slide hidden" id="slide-14" data-slide="14">
+        <div class="slide-inner">
+          <header class="slide-header">
+            <span class="slide-number">14</span>
+            <h2 class="slide-title">Resumo para Estudo</h2>
+            <p class="slide-subtitle">Apostila completa para revisão</p>
+          </header>
+          <div class="apostila-grid">
+            <div class="apostila-section">
+              <h3><i class="fa-solid fa-user"></i> Biografia</h3>
+              <p><strong>Augusto dos Anjos</strong> (1884–1914), natural de Sapé–PB, bacharel em Direito pelo Recife. Viveu em condições difíceis, lecionou e exerceu advocacia. Publicou "Eu" em 1912 e faleceu de pneumonia aos 30 anos, sem obter reconhecimento em vida.</p>
+            </div>
+            <div class="apostila-section">
+              <h3><i class="fa-solid fa-book"></i> Principais Obras</h3>
+              <ul>
+                <li><strong>Eu</strong> (1912) — única publicada em vida</li>
+                <li><strong>Eu e Outras Poesias</strong> (1919) — póstumo</li>
+                <li><strong>Poemas Esquecidos</strong> (1920) — póstumo</li>
+              </ul>
+            </div>
+            <div class="apostila-section">
+              <h3><i class="fa-solid fa-list"></i> Características</h3>
+              <ul>
+                <li>Linguagem científica na poesia</li>
+                <li>Temas: morte, decomposição, sofrimento</li>
+                <li>Pessimismo filosófico (Schopenhauer)</li>
+                <li>Influência do Darwinismo e Positivismo</li>
+                <li>Forma clássica (sonetos) com conteúdo radical</li>
+              </ul>
+            </div>
+            <div class="apostila-section">
+              <h3><i class="fa-solid fa-feather-pointed"></i> Resumo dos Poemas</h3>
+              <p><strong>Psicologia de um Vencido:</strong> O poeta se apresenta como produto químico, derrotado pela existência. Critica a rotina alienada e a inutilidade da vida humana.</p>
+              <p><strong>Versos Íntimos:</strong> Alerta amargo sobre as traições das relações humanas — afeto e violência coexistem no mesmo gesto. Conselho: endurece-te ou serás destruído.</p>
+            </div>
+          </div>
+          <div class="pdf-btn-wrap">
+            <button id="btn-pdf" class="pdf-btn" onclick="window.print()">
+              <i class="fa-solid fa-file-pdf"></i> Baixar Resumo em PDF
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ SLIDE 15 – CONCLUSÃO ══ -->
+      <section class="slide hidden" id="slide-15" data-slide="15">
+        <div class="slide-inner conclusion-slide">
+          <div class="conclusion-content">
+            <span class="slide-number conclusion-num">15</span>
+            <h2 class="conclusion-title">Conclusão</h2>
+            <div class="conclusion-divider"></div>
+            <div class="conclusion-blocks">
+              <div class="con-block">
+                <i class="fa-solid fa-star"></i>
+                <h3>Importância de Augusto dos Anjos</h3>
+                <p>Augusto dos Anjos representa uma anomalia genial na literatura brasileira — um poeta à frente de seu tempo que sintetizou ciência, filosofia e emoção numa voz absolutamente original e inimitável.</p>
+              </div>
+              <div class="con-block">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h3>Contribuição ao Pré-Modernismo</h3>
+                <p>Ao subverter a linguagem poética com vocabulário científico e temas tabus, Augusto abriu caminho para a radicalidade estética que o Modernismo de 1922 consolidaria — sendo, por isso, um precursor essencial.</p>
+              </div>
+            </div>
+            <div class="conclusion-verse">
+              <p class="final-verse">"Toma um fósforo. Acende teu cigarro!<br>
+              O beijo, amigo, é a véspera do escarro,<br>
+              A mão que afaga é a mesma que apedreja."</p>
+              <span class="final-attr">— Augusto dos Anjos, "Versos Íntimos"</span>
+            </div>
+            <p class="conclusion-message">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Obrigado pela atenção! A obra de Augusto nos lembra que a literatura pode ser ao mesmo tempo rigorosa, científica e profundamente humana.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main><!-- /slides-area -->
+
+    <!-- ════════════════════════════════════
+         CONTROLES DE NAVEGAÇÃO
+    ════════════════════════════════════ -->
+    <nav class="nav-controls" aria-label="Controles de slides">
+      <button id="btn-prev" class="nav-btn" aria-label="Slide anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="slide-indicator">
+        <span id="current-slide-num">1</span>
+        <span class="indicator-sep">/</span>
+        <span id="total-slides-num">15</span>
+      </div>
+      <button id="btn-next" class="nav-btn" aria-label="Próximo slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </nav>
+
+    <!-- Barra de progresso superior -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+  </div><!-- /presentation-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
